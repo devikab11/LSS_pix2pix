@@ -39,31 +39,5 @@ with open("train_July4.py") as f:
 
 print("mission successful")
 
-# os.makedirs('savedsamples_June27', exist_ok=True)
-# def save_samples(generator_state_dict, test_loader):
-#     G = Generator()
-#     G.load_state_dict(torch.load(generator_state_dict))
-
-#     for i, data in enumerate(test_loader):
-#         x, y = data
-#         x = x.unsqueeze(1)
-#         y = y.unsqueeze(1)
-
-        
-#         generated_samples = G(x)
-#         print(generated_samples.size())
-
-#         x = generated_samples[0]
-#         #x_size = x.size()
-#         k = x.squeeze(0)
-#         print(k.size())
-#         #k_size = k.size()
-#         k1 = k.detach().numpy()
-
-#         np.save(f'savedsamples_June27/generated_sample{i}.npy', k1)
-#         np.save(f'savedsamples_June27/ground_truth{i}.npy', y.numpy())
-#         np.save(f'savedsamples_June27/initial_sample{i}.npy', x.numpy())
-
-#     print("Done!")
 
 
