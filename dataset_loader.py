@@ -71,10 +71,10 @@ transformed_arrays_FF = [log_transform(arr) for arr in FINAL]
 transformed_arrays_IF_val = [log_transform(arr) for arr in INITIAL_VAL]
 transformed_arrays_FF_val = [log_transform(arr) for arr in FINAL_VAL]
 
-X_train=torch.Tensor(np.array(transformed_arrays_IF))
-Y_train=torch.Tensor(np.array(transformed_arrays_FF))
-X_val=torch.Tensor(np.array(transformed_arrays_IF_val))
-Y_val=torch.Tensor(np.array(transformed_arrays_FF_val))
+Y_train=torch.Tensor(np.array(transformed_arrays_IF))
+X_train=torch.Tensor(np.array(transformed_arrays_FF))
+Y_val=torch.Tensor(np.array(transformed_arrays_IF_val))
+X_val=torch.Tensor(np.array(transformed_arrays_FF_val))
 train_set = TensorDataset(X_train, Y_train)
 val_set = TensorDataset(X_val, Y_val)
 batch_size=1
