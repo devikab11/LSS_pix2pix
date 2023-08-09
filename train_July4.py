@@ -33,6 +33,18 @@ def initialize_weights(model):
 G.apply(initialize_weights)
 D.apply(initialize_weights)
 
+# Load Generator
+G.load_state_dict(torch.load('/home/s6debhat/Aug02/ModelsAug02/Vbestmodel_Gen.pth'))
+
+# Load Generator optimizer
+G_optimizer.load_state_dict(torch.load('/home/s6debhat/Aug02/ModelsAug02/Vbestmodel_GenO.pth'))
+
+# Load Discriminator
+D.load_state_dict(torch.load('/home/s6debhat/Aug02/ModelsAug02/Vbestmodel_Disc.pth'))
+
+# Load Discriminator optimizer
+D_optimizer.load_state_dict(torch.load('/home/s6debhat/Aug02/ModelsAug02/Vbestmodel_DiscO.pth'))
+
 G_loss_tr_epoch=[]
 G_loss_tr_iter=[]
 D_loss_real_tr_epoch=[]
