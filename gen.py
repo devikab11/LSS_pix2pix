@@ -5,6 +5,7 @@ import numpy as np
 #from keras.layers import Conv3D, MaxPooling3D, Flatten, Dense, Conv3DTranspose
 #from keras.optimizers import Adam
 #from sklearn.model_selection import train_test_split
+
 #import matplotlib.pyplot as plt
 #import cv2
 #import os
@@ -49,6 +50,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 #generator
 
 class Generator(nn.Module):
+
  def __init__(self,instance_norm=False):#input : 1 x 128^3
    super(Generator,self).__init__()
    self.e1 = cnn_block(c_dim,gf_dim,4,2,1, first_layer = True) #64 x 64^3
