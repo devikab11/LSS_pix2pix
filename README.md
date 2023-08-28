@@ -9,5 +9,7 @@ Another on-going experiment is to check if the same model can be used for the in
 
 ## Current Results
 
-For a given input of an initial field (z=127), the visual comparison of the generated and true sample is as shown:
+For a given input of an initial field (z=127), the visual comparison of the generated and true sample(z=0) is as shown:
+
+
  

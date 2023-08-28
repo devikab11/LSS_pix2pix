@@ -17,6 +17,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 import os
 
+
 def cnn_block(in_channels,out_channels,kernel_size,stride,padding, first_layer = False):
 
    if first_layer:
@@ -75,4 +76,5 @@ def test_d():
   preds=model(x,y)
   print(preds.shape)
 
-#test_d()
+if __name__ == "__main__":
+  test_d()

@@ -115,4 +115,5 @@ def test():
   preds=model(x)
   print(preds.shape)
 
-#test()
+if __name__ == '__main__':
+    test()
